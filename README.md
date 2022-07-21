@@ -4,7 +4,9 @@
 
 Proposed by the ONE program (Alura + Oracle), this is a simple encryption and decryption web project with web responsiveness.
 
-[ONE](https://imgur.com/Y77PPqB)
+<p align="center">
+  <img height="" src="https://1drv.ms/u/s!AsxY8Ts3f5T5_RK9LIKt-R-E10Fv?e=lrJbY4">
+</p>
 
 ## :pushpin: Preview
 
@@ -20,7 +22,9 @@ Proposed by the ONE program (Alura + Oracle), this is a simple encryption and de
 
 [Under development]
 
-
+<p align="center">
+  <img height="" src="https://1drv.ms/u/s!AsxY8Ts3f5T5_BwrmNd0Dqc4UXMD?e=EzV640>
+</p>
 
 ## :hammer: Built with
 
