@@ -26,7 +26,7 @@ Proposed by the ONE program (Alura + Oracle), this is a simple encryption and de
 
 * **HTML5**
 * **CSS3**
-* **JavaSript**
+* **JavaScript**
 
 ## :page_facing_up: License
 
