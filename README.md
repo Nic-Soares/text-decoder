@@ -4,7 +4,7 @@
 
 Proposed by the ONE program (Alura + Oracle), this is a simple encryption and decryption web project with web responsiveness.
 
-![ONE](https://1drv.ms/u/s!AsxY8Ts3f5T5_RK9LIKt-R-E10Fv?e=u7Ka1o)
+![ONE](https://imgur.com/Y77PPqB)
 
 ## :pushpin: Preview
 
@@ -14,7 +14,7 @@ Proposed by the ONE program (Alura + Oracle), this is a simple encryption and de
 
 ### **Light Mode**
 
-![Ilustracao_Codificador](https://1drv.ms/u/s!AsxY8Ts3f5T5_BwrmNd0Dqc4UXMD?e=SLDLne)
+![Ilustracao_Codificador](https://imgur.com/ZNAfZt2)
 
 ### Dark Mode
 
