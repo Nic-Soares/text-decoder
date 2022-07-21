@@ -4,7 +4,7 @@
 
 Proposed by the ONE program (Alura + Oracle), this is a simple encryption and decryption web project with web responsiveness.
 
-![ONE](/home/paulin/Downloads/ONE.png)
+![ONE](https://1drv.ms/u/s!AsxY8Ts3f5T5_RK9LIKt-R-E10Fv?e=u7Ka1o)
 
 ## :pushpin: Preview
 
@@ -14,7 +14,7 @@ Proposed by the ONE program (Alura + Oracle), this is a simple encryption and de
 
 ### **Light Mode**
 
-![Ilustracao_Codificador](/home/paulin/Documentos/Onedrive Pessoal/BLOCO DESENVOLVIMENTO/ESTUDO/03_TECHNOLOGY/ALURA/00_challenges/Ilustracoes/Ilustracao_Codificador.png)
+![Ilustracao_Codificador](https://1drv.ms/u/s!AsxY8Ts3f5T5_BwrmNd0Dqc4UXMD?e=SLDLne)
 
 ### Dark Mode
 
@@ -26,7 +26,7 @@ Proposed by the ONE program (Alura + Oracle), this is a simple encryption and de
 
 ---
 
-:one: :five: **%** <progress value="15" max="100"></progress>
+<progress value="15" max="100"></progress>
 
 * **HTML5**
 * **CSS3**
