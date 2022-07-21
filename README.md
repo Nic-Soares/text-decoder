@@ -30,4 +30,4 @@ Proposed by the ONE program (Alura + Oracle), this is a simple encryption and de
 
 ## :page_facing_up: License
 
-This project is under license (your license) - see the LICENSE.md file for details.
+<p>This project is under license Apache License 2.0 - see the <a href="https://github.com/NicolasSSantos/Text-Decoder/blob/main/LICENSE">LICENSE</a> file for details.</p>
