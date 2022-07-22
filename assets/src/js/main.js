@@ -1,11 +1,16 @@
-//Extrai o data-content="userText" do HTML e armazena em uma variavel
+//Textarea de entrada de texto
 const inputText = document.querySelector('[data-content="userText"]')
+//Textarea de saida de texto
 const outputText = document.querySelector('[data-content="resultText"]')
+//Botao de encrypt
 const actionEncrypt = document.querySelector('[data-btn="encryptText"]')
+//Botao de encrypt
+const actionDecrypt = document.querySelector('[data-btn="decryptText"]')
 
-console.log(actionEncrypt)
 console.log(inputText)
 console.log(outputText)
+console.log(actionEncrypt)
+console.log(actionDecrypt)
 
 let codeTxt = ''
 
@@ -18,6 +23,26 @@ actionEncrypt.addEventListener('click', () => {
     codeTxt = codeTxt.replace(/a/g, "ai");
     codeTxt = codeTxt.replace(/o/g, "ober");
     codeTxt = codeTxt.replace(/u/g, "ufat");
+
+    inputText.value = '';
+    outputText.textContent = '';
+    outputText.textContent = codeTxt;
+
+    console.log(outputText)
+  }
+
+  inputText.textContent = ''
+})
+
+actionDecrypt.addEventListener('click', () => {
+
+  if (inputText.value != ''){
+    codeTxt = inputText.value;
+    codeTxt = codeTxt.replace(/enter/g, "e");
+    codeTxt = codeTxt.replace(/imes/g, "i");
+    codeTxt = codeTxt.replace(/ai/g, "a");
+    codeTxt = codeTxt.replace(/ober/g, "o");
+    codeTxt = codeTxt.replace(/ufat/g, "u");
 
     inputText.value = '';
     outputText.textContent = '';
