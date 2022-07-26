@@ -47,3 +47,32 @@ actionDecrypt.addEventListener('click', () => {
 actionCopy.addEventListener('click', () => {
   navigator.clipboard.writeText(outputText.textContent)
 })
+
+inputText.addEventListener('keypress', function(e) {
+  if(!checkChar(e)) {
+    e.preventDefault();
+  }
+});
+
+function checkChar(e) {
+  const char = String.fromCharCode(e.keyCode);
+
+  if(char.match('[a-z]')) {
+    console.log(char);
+    return true;
+  }
+}
+
+inputText.addEventListener("paste", function() {
+  
+  const regex = new RegExp("^[0-9a-zA-Z\b]+$")
+  const self = this;
+
+  setTimeout(function() {
+    const text = self.value;
+
+    if(!regex.test(text)) {
+      self.value = ""
+    }
+  }, 10)
+})
