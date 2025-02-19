@@ -1,0 +1,61 @@
+/* base/variables.css */
+:root {
+
+    /* Fonts and Weights */
+    --font-primary: "Roboto", "Helvetica Neue", Arial, sans-serif;
+    --font-weight-thin: 100;
+    --font-weight-light: 300;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+    --font-weight-black: 900;
+    
+    /* Spacing */
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --spacing-xl: 32px;
+    --feature-gap: 50px; /* Evitar usar rem para gaps predefinidos */
+    
+    /* Typography Sizes */
+    --display-large-size: 57px;
+    --headline-large-size: 32px;
+    --title-large-size: 22px;
+    --label-large-size: 14px;
+    --body-large-size: 16px;
+    
+    /* Typography Line Heights */
+    --display-large-line-height: 64px;
+    --headline-large-line-height: 40px;
+    --title-large-line-height: 28px;
+    --label-large-line-height: 20px;
+    --body-large-line-height: 24px;
+    
+    /* Typography Letter Spacing */
+    --display-large-letter-spacing: -0.25px;
+    --headline-large-letter-spacing: 0px;
+    --title-large-letter-spacing: 0px;
+    --label-large-letter-spacing: 0.1px;
+    --body-large-letter-spacing: 0.5px;
+    
+    /* Typography Weights */
+    --display-large-font-weight: var(--font-weight-regular);
+    --headline-large-font-weight: var(--font-weight-regular);
+    --title-large-font-weight: var(--font-weight-regular);
+    --label-large-font-weight: var(--font-weight-medium);
+    --body-large-font-weight: var(--font-weight-regular);
+
+    --line-height-small: 1.333; /* 133.333% */
+    --line-height-medium: 1.428; /* 142.857% */
+    --line-height-large: 1.5;   /* 150% */
+    
+    --body-small-line-height: calc(var(--body-small-size) * var(--line-height-small));
+    --body-medium-line-height: calc(var(--body-medium-size) * var(--line-height-medium));
+    
+    /* Buttons variables */
+    --button-transition: 0.2s ease;
+    --button-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.30), 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+    --button-radius: 6.25rem;
+    --button-shadow-focus: 0px 1px 2px 0px rgba(0, 0, 0, 0.40), 0px 1px 3px 1px rgba(0, 0, 0, 0.20);
+}

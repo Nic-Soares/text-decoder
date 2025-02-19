@@ -1,56 +1,106 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+
     <link rel="shortcut icon" href="./assets/src/images/Favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./assets/src/css/reset.css">
-    <link rel="stylesheet" href="./assets/src/css/style.css">
+        
+    <script type="importmap">
+    {
+        "imports": {
+        "@material/web/": "https://esm.run/@material/web/"
+        }
+    }
+    </script>
+    <script type="module">
+    import '@material/web/all.js';
+    import {styles as typescaleStyles} from '@material/web/typography/md-typescale-styles.js';
+
+    document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
+    </script>
+        
+    <link rel="stylesheet" href="src/style/main.css">
     <title>Encoder</title>
 </head>
-<body>
-    <header>
-        <!-- <h1><img src="assets/images/logo" alt=""></h1> -->
+<body class="page light">
+    
+    <header class="header">
+        <div class="header__logo">
+            <img class="header__logo-image" src="src/assets/logos/catalog-logo.svg"/>
+        </div>
+        <nav class="header__navigation">
+            <div class="header__navigation-item">
+                <md-switch class="header__switch" id="switch"></md-switch>
+                <label class="header__switch-label label-medium" for="switch">Light mode</label>
+            </div>
+        </nav>
     </header>
-    <main class="container">
-        <section class="container user">
-            <div>
-                <textarea name="" cols="30" rows="10" placeholder="Enter your text" data-content="userText" required></textarea>
+    
+    <main class="main">
+        <section class="encoder">
+                <div class="encoder__input-container">
+                    <textarea class="encoder__input-field display-small" data-content="userText" placeholder="Enter your text" required></textarea>
+                </div>
+                <div class="encoder__rule-container body-small">
+                    <span class="material-symbols-outlined error">error</span>
+                    <span class="encoder__rule-text">Lowercase letters only and no accents</span>
+                </div>
+                <div class="encoder__button-group">
+                    <md-outlined-button class="encoder__button encoder__button--encrypt">
+                        Encrypt
+                    </md-outlined-button>
+                    
+                    <md-outlined-button class="encoder__button encoder__button--decrypt">
+                        Decrypt
+                    </md-outlined-button>
+                </div>
+            </section>
+        <section class="result">
+            <div class="result__empty">
+                <img class="result__image" src="src/assets/illus/girl-with-magnifying-glass.svg">
+                <div class="result__content">
+                    <h3 class="result__title .display-small">
+                        No message found
+                    </h3>
+                    <p class="result__description .body-large">
+                        Enter a text you want to encrypt or decrypt.
+                    </p>
+                </div>
             </div>
-            <div>
-                <span id="rule">Lowercase letters only and no accents</span>
-            </div>
-            <div class="btnBox">
-                <button data-btn="encryptText">Encrypt</button>
-                <button data-btn="decryptText">Decrypt</button>
-            </div>
-        </section>
-        <section class="container read">
-            <div class="resultBox">
-                <textarea name="" id="" cols="30" rows="10" data-content="resultText" disabled></textarea>
-            </div>
-            <div class="copyBox">
-                <button id="btnCopy" data-btn="copyText">Copy</button>
-            </div>
+            <!-- <div class="result__content">
+            <textarea data-content="resultText" disabled></textarea>
+            </div> -->
+            <!-- <div class="result__copy">
+                <button class="result__copy-button" id="btnCopy" data-btn="copyText">Copy</button>
+            </div> -->
         </section>
     </main>
 </body>
-<!-- <footer>
-    <div>
-          <span>© 2022 Nicolas Soares Santos</span>
-    </div>
-    <ul>
-        <li><a class="text-muted" href="#">Imagem vai aqui</a></li>
-        <li><a class="text-muted" href="#">Imagem vai aqui</a></li>
-        <li><a class="text-muted" href="#">Imagem vai aqui</a></li>
-    </ul>
-    <a href="https://br.freepik.com/fotos-vetores-gratis/cadeado">Cadeado vetor criado por rawpixel.com - br.freepik.com</a>
-</footer> -->
 
-<script src="./assets/src/js/main.js"></script>
+<!-- <footer class="footer">
+        <div class="footer__copyright">
+              <span class="footer__copyright-text">© 2022 Nicolas Soares Santos</span>
+        </div>
+        <ul class="footer__social">
+            <li class="footer__social-item">
+                <a class="footer__social-link" href="#">Imagem vai aqui</a>
+            </li>
+            <li class="footer__social-item">
+                <a class="footer__social-link" href="#">Imagem vai aqui</a>
+            </li>
+            <li class="footer__social-item">
+                <a class="footer__social-link" href="#">Imagem vai aqui</a>
+            </li>
+        </ul>
+        <a class="footer__attribution" href="https://br.freepik.com/fotos-vetores-gratis/cadeado">Cadeado vetor criado por rawpixel.com - br.freepik.com</a>
+    </footer> -->
+
+<!-- <script src="src/index.js"></script> -->
 
 </html>
