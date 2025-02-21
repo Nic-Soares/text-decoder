@@ -6,7 +6,7 @@
     align-items: center;
     
     border-radius: 6rem;
-    background: var(--Schemes-Surface-Container, #EBEEF7);
+    background: var(--md-sys-color-surface-container, #EBEEF7);
 }
 
 .header div {

@@ -5,7 +5,7 @@
     padding: 2.5rem;
     gap: 3.5rem;
     
-    background: var(--Schemes-Surface, #F9F9FF);
+    background: var(--md-sys-color-surface, #F9F9FF);
 }
 
 .main {
