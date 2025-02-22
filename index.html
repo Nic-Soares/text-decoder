@@ -45,14 +45,14 @@
     <main class="main">
         <section class="encoder">
                 <div class="encoder__input-container">
-                    <textarea class="encoder__input-field display-small" data-content="userText" placeholder="Enter your text" required></textarea>
+                    <textarea class="encoder__input-field display-small" pattern="[a-z]*"  type="text" data-content="userText" placeholder="Enter your text" required></textarea>
                 </div>
                 <div class="encoder__rule-container body-small">
                     <span class="material-symbols-outlined error">error</span>
                     <span class="encoder__rule-text">Lowercase letters only and no accents</span>
                 </div>
                 <div class="encoder__button-group">
-                    <md-outlined-button class="encoder__button encoder__button--encrypt">
+                    <md-outlined-button class="encoder__button" data-btn="encoder__button--encrypt">
                         Encrypt
                     </md-outlined-button>
                     
@@ -73,12 +73,10 @@
                     </p>
                 </div>
             </div>
-            <!-- <div class="result__content">
-            <textarea data-content="resultText" disabled></textarea>
-            </div> -->
-            <!-- <div class="result__copy">
+            <div class="result__output hidden">
+                <textarea class="result__output-field display-small" data-content="resultText" disabled></textarea>
                 <button class="result__copy-button" id="btnCopy" data-btn="copyText">Copy</button>
-            </div> -->
+            </div>
         </section>
     </main>
 </body>

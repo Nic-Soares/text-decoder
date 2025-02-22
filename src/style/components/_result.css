@@ -42,9 +42,27 @@
     flex-direction: column;
 }
 
-.result__content textarea {
-  width: 100%;
-  height: 100%;
-  min-height: 200px;
-  resize: none;
+.result__output{
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    min-width: 0; /* Previne overflow em grids */
+    flex: 1;
+}
+
+
+.result__output-field {
+    width: 100%;
+    height: 100%;
+    min-height: 200px;
+    resize: none;
+    background: transparent;
+    border: none;
+    outline: none;
+    
+    color: var(--md-sys-color-on-surface);
+}
+
+.result__copy-button {
+    display: none;
 }
