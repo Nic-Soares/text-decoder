@@ -6,7 +6,7 @@
 //   }
 // }
 
-import { encodeText } from "./encoder";
+import encodeText from "./encoder.js"
 
 // Elementos DOM
 const inputTextArea = document.querySelector('[data-content="userText"]') as HTMLTextAreaElement;
@@ -18,13 +18,18 @@ const buttonEncripty = document.querySelector('[data-btn=encoder__button--encryp
 // Controle de input
 export function filterInput(event: Event) {
   const input = event.target as HTMLTextAreaElement;
-  input.value = input.value.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-}
-
-// Inicialização dos event listeners
-export function initializeTextAreaController() {
-  inputTextArea.addEventListener('input', filterInput);
-  buttonEncripty.addEventListener('click', handleEncryption);
+  const resultado = input.value
+      .toLowerCase()
+      .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g, '')
+      .replace(/[^a-z\s]/g, '')
+      .replace(/\s+/g, ' ')
+      // .trim();
+  
+  // console.log('Valor original:', input.value);
+  // console.log('Resultado:', resultado);
+  
+  input.value = resultado;
 }
 
 // Manipulação da UI
@@ -45,4 +50,10 @@ function updateUI(text: string) {
 
 function clearInput() {
   inputTextArea.value = '';
+}
+
+// Inicialização dos event listeners
+export function initializeTextAreaController() {
+  inputTextArea.addEventListener('input', filterInput);
+  buttonEncripty.addEventListener('click', handleEncryption);
 }

@@ -15,15 +15,12 @@
     background: var(--md-sys-color-surface-container, #EBEEF7);
 }
 
-.result__image {
-    
-}
-
-.result__content {
+.result__empty {
     display: flex;
     flex-direction: column;
-    align-content: center;
-    gap: 0.9375rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
 }
 
 .result__title {
@@ -32,7 +29,7 @@
 }
 
 .result__description {
-    color: var(--md-sys-color-on-surface);
+    color: var(--md-sys-color-on-surface-variant);
     text-align: center;
 }
 
@@ -48,8 +45,8 @@
     gap: 1.25rem;
     min-width: 0; /* Previne overflow em grids */
     flex: 1;
+    display: none;
 }
-
 
 .result__output-field {
     width: 100%;

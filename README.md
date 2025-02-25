@@ -10,11 +10,6 @@
 <br />
 
 <div align="center">
-  <a href="https://github.com/Nic-Soares/text-decoder">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
-
-
   <h3 align="center">Text Decoder</h3>
 
   <p align="center">
@@ -57,8 +52,6 @@
 
 ## About The Project
 
-<!-- ![Project Screenshot](https://i.imgur.com/ZNAfZt2.png) -->
-
 This project, evolved from an Alura ONE challenge, has been reimagined as a professional-grade text processing tool. It maintains the core concept of text encoding/decoding while implementing modern web development practices and enhanced user experience.
 
 ## Features
@@ -73,8 +66,8 @@ This project, evolved from an Alura ONE challenge, has been reimagined as a prof
 
 * [![TypeScript][TypeScript]][TypeScript-url]
 * [![Material Design][MaterialDesign]][MaterialDesign-url]
-* [![Vite][Vite]][Vite-url]
-* [![SASS][SASS]][SASS-url]
+* [![CSS][CSS]][CSS-url]
+* [![HTML5][HTML5]][HTML5-url]
 
 ## Getting Started
 
@@ -109,17 +102,11 @@ This project, evolved from an Alura ONE challenge, has been reimagined as a prof
 ## Design
 
 The UI/UX was carefully crafted in Figma following Material Design 3 principles.
-[View Figma Project](https://www.figma.com/file/tvFEYhVfZTjdJ5P24RGV21/)
+[View Figma Project](https://www.figma.com/design/hTqeS62v82SNdmRB9HdpVa/Web-Desing?node-id=428-2298&t=QKc55g8YmOgzb8i1-1)
 
 ### Theme Previews
 
-#### Light Mode
-
-![Light Mode Preview](https://i.imgur.com/ZNAfZt2.png)
-
-#### Dark Mode
-
-[Coming Soon]
+![readme](/home/nicolas/Projects/text-decoder/src/assets/images/readme.png)
 
 ## Roadmap
 
@@ -147,9 +134,7 @@ Distributed under the Apache License 2.0. See `LICENSE` for more information.
 
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username)
-
-Project Link: [https://github.com/Nic-Soares/text-decoder](https://github.com/Nic-Soares/text-decoder)
+Nicolas - [@nicolas.png](https://pixelfed.social/i/web/profile/786535529506570345)
 
 ## Acknowledgments
 
@@ -177,40 +162,7 @@ Project Link: [https://github.com/Nic-Soares/text-decoder](https://github.com/Ni
 
 [TypeScript]:  	https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white
 [TypeScript-url]: https://www.typescriptlang.org/
-[MaterialDesign]: https://img.shields.io/badge/Material--UI-0081CB?style=for-the-badge&logo=material-ui&logoColor=white
+[MaterialDesign]: https://img.shields.io/badge/Material%20Desing-%23757575?style=for-the-badge&logo=materialdesign&logoColor=%23757575&logoSize=auto&labelColor=white&color=%23757575
 [MaterialDesign-url]: https://m3.material.io/
-
-
-<!-- #  **Text Decoder - Alura Challenges Oracle ONE**
-
-Proposed by the ONE program (Alura + Oracle), this is a simple encryption and decryption web project with web responsiveness.
-
-<p align="center">
-  <img height="" src="https://i.imgur.com/Y77PPqB.png">
-</p>
-
-## :pushpin: Preview
-
-<p align="center">
-  <a href="https://www.figma.com/file/tvFEYhVfZTjdJ5P24RGV21/Alura-Challenge---Desafio-1---L%C3%B3gica"><b>| Figma |</a></b>
-</p>
-
-### **Light Mode**
-
-<p align="center">
-  <img height="" src="https://i.imgur.com/ZNAfZt2.png">
-</p>
-
-### Dark Mode
-
-[Under development]
-
-## :hammer: Built with
-
-* **HTML5**
-* **CSS3**
-* **JavaScript**
-
-## :page_facing_up: License
-
-<p>This project is under license Apache License 2.0 - see the <a href="https://github.com/NicolasSSantos/Text-Decoder/blob/main/LICENSE">LICENSE</a> file for details.</p> -->
+[CSS]: https://img.shields.io/badge/CSS-CSS?style=for-the-badge&logo=css&logoColor=%23663399&logoSize=auto&labelColor=white&color=%23663399
+[HTML5]: https://img.shields.io/badge/Material%20Desing-%23757575?style=for-the-badge&logo=html5&logoColor=%23E34F26&logoSize=auto&labelColor=white&color=%23E34F26

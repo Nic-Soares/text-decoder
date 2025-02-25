@@ -2,6 +2,7 @@
 @import 'material/symbols/_symbols.css';  /* Corrigido */
 @import 'material/themes/_light.css';
 @import 'material/themes/_dark.css';
+@import 'material/icon_button/presets.css';
 
 /* Base */
 @import 'base/_variables.css';
