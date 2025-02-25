@@ -66,8 +66,8 @@ This project, evolved from an Alura ONE challenge, has been reimagined as a prof
 
 * [![TypeScript][TypeScript]][TypeScript-url]
 * [![Material Design][MaterialDesign]][MaterialDesign-url]
-* [![CSS][CSS]][CSS-url]
-* [![HTML5][HTML5]][HTML5-url]
+* [![CSS][CSS]]
+* [![HTML5][HTML5]]
 
 ## Getting Started
 
@@ -106,14 +106,14 @@ The UI/UX was carefully crafted in Figma following Material Design 3 principles.
 
 ### Theme Previews
 
-![readme](/home/nicolas/Projects/text-decoder/src/assets/images/readme.png)
+![Readme](src/assets/images/readme.png)
 
 ## Roadmap
 
 - [x] Complete UI redesign
 - [x] TypeScript environment setup
+- [x] Dark mode implementation
 - [ ] JavaScript to TypeScript migration
-- [ ] Dark mode implementation
 - [ ] Additional text processing features
 
 See the [open issues](https://github.com/Nic-Soares/text-decoder/issues) for a full list of proposed features and known issues.
@@ -160,7 +160,7 @@ Nicolas - [@nicolas.png](https://pixelfed.social/i/web/profile/78653552950657034
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/your-username
 
-[TypeScript]:  	https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white
+[TypeScript]: https://img.shields.io/badge/TypeScript-a?style=for-the-badge&logo=typescript&logoColor=%233178C6&logoSize=auto&labelColor=white&color=%233178C6
 [TypeScript-url]: https://www.typescriptlang.org/
 [MaterialDesign]: https://img.shields.io/badge/Material%20Desing-%23757575?style=for-the-badge&logo=materialdesign&logoColor=%23757575&logoSize=auto&labelColor=white&color=%23757575
 [MaterialDesign-url]: https://m3.material.io/
