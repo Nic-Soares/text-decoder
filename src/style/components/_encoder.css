@@ -1,9 +1,7 @@
+/* Propriedades Globais (que não se alteram em nenhum media query) */
 .encoder {
     display: flex;
     flex-direction: column;
-    padding-top: 2.8125rem;
-    gap: 1.25rem;
-    min-width: 0; /* Previne overflow em grids */
 }
 
 .encoder__input-container {
@@ -13,15 +11,13 @@
 }
 
 .encoder__input-field {
-  width: 100%;
-  height: 100%;
-  min-height: 200px;
-  resize: none;
-  background: transparent;
-  border: none;
-  outline: none;
-  
-  color: var(--md-sys-color-on-surface);
+    width: 100%;
+    height: 100%;
+    resize: none;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--md-sys-color-on-surface);
 }
 
 .encoder__rule-container {
@@ -35,14 +31,70 @@
     font-size: 12px;
 }
 
-.encoder__button-group {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap; /* Permite que os botões quebrem em telas muito pequenas */
+.button-group {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
 
 .encoder__button {
     flex: 1;
     height: 48px;
     font-size: 16px;
+}
+
+/* Desktop properties (telas maiores que 1024px) */
+@media screen and (min-width: 1025px) {
+    .encoder {
+        padding-top: 2.8125rem;
+        gap: 1.25rem;
+    }
+    
+    .encoder__input-field {
+        min-height: 200px;
+    }
+}
+
+/* Tablets properties */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .encoder {
+        display: flex;
+        gap: 1.25rem;
+    }
+    
+    .encoder__input-field {
+        min-height: 200px;
+    }
+    
+    .encoder .button-group {
+        display: none;
+    }
+    
+    .encoder .encoder__rule-container {
+        display: none;
+    }
+}
+
+/* Smartphones properties */
+@media screen and (max-width: 600px) {
+    .encoder {
+        padding-top: 0;
+        gap: 0.75rem;
+    }
+    
+    .encoder__input-field {
+        min-height: 150px;
+    }
+    
+    .encoder .button-group {
+        display: none;
+    }
+    
+    .encoder .encoder__rule-container {
+        display: none;
+    }
+    
+    .display-small {
+        font-size: 30px;
+    }
 }

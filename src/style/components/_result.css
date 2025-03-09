@@ -1,26 +1,13 @@
+/* Global properties */
 .result {
     display: flex;
     flex-direction: column;
-    min-width: 0; /* Previne overflow em grids */
-}
-
-.result {
-    padding: 2.5rem 2.5rem;
-    gap: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    border-radius: 2.25rem;
-    background: var(--md-sys-color-surface-container, #EBEEF7);
 }
 
 .result__empty {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
+    flex: 1;
+    align-content: center;
 }
 
 .result__title {
@@ -34,12 +21,11 @@
 }
 
 .result__content {
-    flex: 1;
     display: flex;
     flex-direction: column;
 }
 
-.result__output{
+.result__output {
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
@@ -51,15 +37,139 @@
 .result__output-field {
     width: 100%;
     height: 100%;
-    min-height: 200px;
     resize: none;
     background: transparent;
     border: none;
     outline: none;
-    
     color: var(--md-sys-color-on-surface);
 }
 
 .result__copy-button {
     display: none;
+}
+
+/* Desktop properties (telas maiores que 1024px) */
+@media screen and (min-width: 1025px) {
+    .result {
+        padding: 2.5rem;
+        gap: 1rem;
+        border-radius: 2.25rem;
+        background: var(--md-sys-color-surface-container, #EBEEF7);
+    }
+    
+    .result__empty {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .result__output-field {
+        min-height: 200px;
+    }
+}
+
+/* Tablet e mobile */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .result {
+        padding: 0;
+        gap: 1.5rem;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        border-radius: 0;
+        background: none;
+    }
+    
+    .result .encoder__rule-container {
+        display: initial;
+    }
+    
+    .result .button-group {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    
+    .result__empty {
+        display: flex;
+        padding: 2.5rem;
+        flex-direction: initial;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        flex: 1;
+        border-radius: 2.25rem;
+        background: var(--md-sys-color-surface-container, #EBEEF7);
+    }
+    
+    .result__empty img {
+        display: none;
+    }
+    
+    .result__output {
+        display: flex;
+        padding: 2.5rem;
+        flex-direction: initial;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        max-height: 8.3rem;
+        flex: 1;
+        border-radius: 2.25rem;
+        background: var(--md-sys-color-surface-container, #EBEEF7);
+    }
+}
+
+/* Smartphones properties */
+@media screen and (max-width: 600px) {
+    .result {
+        padding: 0;
+        gap: 1.5rem;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        border-radius: 0;
+        background: none;
+    }
+    
+    .result .encoder__rule-container {
+        display: initial;
+    }
+    
+    .result .button-group {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    
+    .result__empty {
+        display: flex;
+        padding: 2.5rem;
+        flex-direction: initial;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        flex: 1;
+        border-radius: 2.25rem;
+        background: var(--md-sys-color-surface-container, #EBEEF7);
+    }
+    
+    .result__empty img {
+        display: none;
+    }
+    
+    .result__output {
+        display: flex;
+        padding: 2.5rem;
+        flex-direction: initial;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        max-height: 8.3rem;
+        flex: 1;
+        border-radius: 2.25rem;
+        background: var(--md-sys-color-surface-container, #EBEEF7);
+    }
 }

@@ -4,28 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
+    
+    <title>Encoder</title>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
-
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
     <link rel="shortcut icon" href="./assets/src/images/Favicon.ico" type="image/x-icon">
+    
+    <link rel="stylesheet" href="src/style/main.css">
         
     <script type="importmap">
-    {
-        "imports": {
-        "@material/web/": "https://esm.run/@material/web/"
-        }
-    }
+      {
+          "imports": {
+          "@material/web/": "https://esm.run/@material/web/"
+          }
+      }
     </script>
     <script type="module">
-    import '@material/web/all.js';
-    import {styles as typescaleStyles} from '@material/web/typography/md-typescale-styles.js';
-
-    document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
+      import '@material/web/all.js';
+      import {styles as typescaleStyles} from '@material/web/typography/md-typescale-styles.js';
+  
+      document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
     </script>
         
-    <link rel="stylesheet" href="src/style/main.css">
     <title>Encoder</title>
 </head>
 <body class="page light">
@@ -58,7 +61,7 @@
                     <span class="material-symbols-outlined error">error</span>
                     <span class="encoder__rule-text">Lowercase letters only and no accents</span>
                 </div>
-                <div class="encoder__button-group">
+                <div class="button-group">
                     <md-outlined-button class="encoder__button" data-btn="encoder__button--encrypt">
                         Encrypt
                     </md-outlined-button>
@@ -83,6 +86,19 @@
             <div class="result__output hidden">
                 <textarea class="result__output-field display-small" data-content="resultText" disabled></textarea>
                 <button class="result__copy-button" id="btnCopy" data-btn="copyText">Copy</button>
+            </div>
+            <div class="encoder__rule-container body-small hidden">
+                <span class="material-symbols-outlined error">error</span>
+                <span class="encoder__rule-text">Lowercase letters only and no accents</span>
+            </div>
+            <div class="button-group hidden">
+                <md-outlined-button class="encoder__button" data-btn="encoder__button--encrypt">
+                    Encrypt
+                </md-outlined-button>
+                
+                <md-outlined-button class="encoder__button" data-btn="encoder__button--decrypt">
+                    Decrypt
+                </md-outlined-button>
             </div>
         </section>
     </main>
