@@ -7,6 +7,7 @@
 // }
 
 import encodeText from "./encoder.js"
+import decodeText from "./decoder.js";
 
 // Elementos DOM
 const inputTextArea = document.querySelector('[data-content="userText"]') as HTMLTextAreaElement;
@@ -18,7 +19,7 @@ const main = document.querySelector('.main') as HTMLElement;
 // Obtém TODOS os botões de criptografar e descriptografar (nas seções de encoder e result)
 const encryptButtons = document.querySelectorAll('[data-btn="encoder__button--encrypt"]') as NodeListOf<HTMLElement>;
 const decryptButtons = document.querySelectorAll('[data-btn="encoder__button--decrypt"]') as NodeListOf<HTMLElement>;
-const copyButton = document.querySelector('[data-btn="copyText"]') as HTMLElement;
+const resultSection = document.querySelector('.result__output') as HTMLElement;
 
 // Controle de input
 export function filterInput(event: Event) {
@@ -44,7 +45,7 @@ function handleEncryption() {
 
 function handleDecryption() {
   if (inputTextArea.value !== '') {
-    const decryptedText = encodeText(inputTextArea.value);
+    const decryptedText = decodeText(inputTextArea.value);
     updateUI(decryptedText);
     clearInput();
   }
@@ -54,11 +55,30 @@ function handleCopy() {
   if (resultTextArea.textContent) {
     navigator.clipboard.writeText(resultTextArea.textContent)
       .then(() => {
-        // Feedback visual opcional de que a cópia foi bem-sucedida
-        copyButton.textContent = "Copiado!";
+        // Feedback visual temporário
+        const originalBgColor = resultSection.style.backgroundColor;
+        
+        // Indicador temporário
+        const tooltip = document.createElement('div');
+        tooltip.textContent = 'Copiado!';
+        tooltip.style.position = 'absolute';
+        tooltip.style.padding = '5px 10px';
+        tooltip.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
+        tooltip.style.color = 'white';
+        tooltip.style.borderRadius = '4px';
+        tooltip.style.top = '50%';
+        tooltip.style.left = '50%';
+        tooltip.style.transform = 'translate(-50%, -50%)';
+        tooltip.style.zIndex = '1000';
+        
+        resultSection.style.position = 'relative';
+        resultSection.appendChild(tooltip);
+        
+        // Remove o feedback visual após um tempo
         setTimeout(() => {
-          copyButton.textContent = "Copiar";
-        }, 2000);
+          resultSection.style.backgroundColor = originalBgColor;
+          resultSection.removeChild(tooltip);
+        }, 1500);
       })
       .catch(err => {
         console.error('Falha ao copiar o texto: ', err);
@@ -92,5 +112,5 @@ export function initializeTextAreaController() {
   });
   
   // Adiciona funcionalidade de cópia
-  copyButton.addEventListener('click', handleCopy);
+  resultSection.addEventListener('click', handleCopy);
 }

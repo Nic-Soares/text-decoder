@@ -54,11 +54,11 @@ md-outlined-icon-button:hover .header__navigation__icon {
 @media screen and (max-width: 600px) {
     .header {
         padding: 0.75rem 1rem;
-        max-height: 60px; /* Reduzir altura do cabeçalho */
+        max-height: 90px; /* Reduzir altura do cabeçalho */
     }
     
     .header__logo {
-        width: 32px;
-        height: 38px;
+        width: 42px;
+        height: 48px;
     }
 }

@@ -47,4 +47,4 @@ temp/
 # Optional: keep these if you want to version control them
 # tsconfig.json
 # package.json
-changes.patch
+*.patch

@@ -23,6 +23,7 @@
 .result__content {
     display: flex;
     flex-direction: column;
+
 }
 
 .result__output {
@@ -42,19 +43,20 @@
     border: none;
     outline: none;
     color: var(--md-sys-color-on-surface);
+    pointer-events: none;
 }
 
-.result__copy-button {
+/* .result__copy-button {
     display: none;
-}
+} */
 
 /* Desktop properties (telas maiores que 1024px) */
 @media screen and (min-width: 1025px) {
     .result {
-        padding: 2.5rem;
+        /* padding: 2.5rem;
         gap: 1rem;
         border-radius: 2.25rem;
-        background: var(--md-sys-color-surface-container, #EBEEF7);
+        background: var(--md-sys-color-surface-container, #EBEEF7); */
     }
     
     .result__empty {
@@ -63,10 +65,17 @@
         justify-content: center;
         align-items: center;
         gap: 1rem;
+        padding: 2.5rem;
+        gap: 1rem;
+        border-radius: 2.25rem;
+        background: var(--md-sys-color-surface-container, #EBEEF7);
     }
     
     .result__output-field {
         min-height: 200px;
+        padding: 2.5rem;
+        border-radius: 2.25rem;
+        background: var(--md-sys-color-surface-container, #EBEEF7);
     }
 }
 
@@ -94,7 +103,7 @@
     
     .result__empty {
         display: flex;
-        padding: 2.5rem;
+        padding: 1.4rem;
         flex-direction: initial;
         align-items: center;
         justify-content: center;
@@ -110,13 +119,11 @@
     
     .result__output {
         display: flex;
-        padding: 2.5rem;
+        padding: 1.4rem;
         flex-direction: initial;
         align-items: center;
         justify-content: center;
         width: 100%;
-        max-height: 8.3rem;
-        flex: 1;
         border-radius: 2.25rem;
         background: var(--md-sys-color-surface-container, #EBEEF7);
     }
@@ -162,12 +169,11 @@
     
     .result__output {
         display: flex;
-        padding: 2.5rem;
+        padding: 1.4rem 1rem;
         flex-direction: initial;
         align-items: center;
         justify-content: center;
         width: 100%;
-        max-height: 8.3rem;
         flex: 1;
         border-radius: 2.25rem;
         background: var(--md-sys-color-surface-container, #EBEEF7);

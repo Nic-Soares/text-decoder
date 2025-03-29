@@ -66,8 +66,8 @@ This project, evolved from an Alura ONE challenge, has been reimagined as a prof
 
 * [![TypeScript][TypeScript]][TypeScript-url]
 * [![Material Design][MaterialDesign]][MaterialDesign-url]
-* [![CSS][CSS]]
-* [![HTML5][HTML5]]
+* [![CSS][CSS]][CSS-url]
+* [![HTML5][HTML5]][HTML5-url]
 
 ## Getting Started
 
@@ -158,11 +158,13 @@ Nicolas - [@nicolas.png](https://pixelfed.social/i/web/profile/78653552950657034
 [license-shield]: https://img.shields.io/github/license/Nic-Soares/text-decoder.svg?style=for-the-badge
 [license-url]: https://github.com/Nic-Soares/text-decoder/blob/main/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/your-username
+[linkedin-url]: https://www.linkedin.com/in/nicolas-soares-797847121/
 
 [TypeScript]: https://img.shields.io/badge/TypeScript-a?style=for-the-badge&logo=typescript&logoColor=%233178C6&logoSize=auto&labelColor=white&color=%233178C6
 [TypeScript-url]: https://www.typescriptlang.org/
 [MaterialDesign]: https://img.shields.io/badge/Material%20Desing-%23757575?style=for-the-badge&logo=materialdesign&logoColor=%23757575&logoSize=auto&labelColor=white&color=%23757575
 [MaterialDesign-url]: https://m3.material.io/
 [CSS]: https://img.shields.io/badge/CSS-CSS?style=for-the-badge&logo=css&logoColor=%23663399&logoSize=auto&labelColor=white&color=%23663399
+[CSS-url]: https://img.shields.io/badge/CSS-CSS?style=for-the-badge&logo=css&logoColor=%23663399&logoSize=auto&labelColor=white&color=%23663399
 [HTML5]: https://img.shields.io/badge/Material%20Desing-%23757575?style=for-the-badge&logo=html5&logoColor=%23E34F26&logoSize=auto&labelColor=white&color=%23E34F26
+[HTML5-url]: https://img.shields.io/badge/Material%20Desing-%23757575?style=for-the-badge&logo=html5&logoColor=%23E34F26&logoSize=auto&labelColor=white&color=%23E34F26
