@@ -8,6 +8,8 @@
     display: flex;
     flex: 1;
     align-content: center;
+    border-radius: 2.25rem;
+    background: var(--md-sys-color-surface-container, #EBEEF7);
 }
 
 .result__title {
@@ -23,7 +25,6 @@
 .result__content {
     display: flex;
     flex-direction: column;
-
 }
 
 .result__output {
@@ -32,7 +33,8 @@
     gap: 1.25rem;
     min-width: 0; /* Previne overflow em grids */
     flex: 1;
-    display: none;
+    border-radius: 2.25rem;
+    background: var(--md-sys-color-surface-container, #EBEEF7);
 }
 
 .result__output-field {
@@ -46,136 +48,86 @@
     pointer-events: none;
 }
 
-/* .result__copy-button {
-    display: none;
-} */
-
 /* Desktop properties (telas maiores que 1024px) */
 @media screen and (min-width: 1025px) {
-    .result {
-        /* padding: 2.5rem;
-        gap: 1rem;
-        border-radius: 2.25rem;
-        background: var(--md-sys-color-surface-container, #EBEEF7); */
-    }
-    
     .result__empty {
-        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 1rem;
         padding: 2.5rem;
-        gap: 1rem;
-        border-radius: 2.25rem;
-        background: var(--md-sys-color-surface-container, #EBEEF7);
     }
     
     .result__output-field {
         min-height: 200px;
         padding: 2.5rem;
-        border-radius: 2.25rem;
-        background: var(--md-sys-color-surface-container, #EBEEF7);
+    }
+
+    .result__output {
+        display: flex;
     }
 }
 
-/* Tablet e mobile */
+/* Compartilhado entre Tablet e Mobile */
+@media screen and (max-width: 1024px) {
+    .result {
+        padding: 0;
+        gap: 1.5rem;
+        align-items: flex-start;
+        justify-content: flex-start;
+        border-radius: 0;
+        background: none;
+    }
+    
+    .result .encoder__rule-container {
+        display: initial;
+    }
+    
+    .result .button-group {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    
+    .result__empty {
+        padding: 1.4rem;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .result__empty img {
+        display: none;
+    }
+    
+    .result__output {
+        display: flex;
+        width: 100%;
+    }
+}
+
+/* Tablet específico */
 @media screen and (min-width: 601px) and (max-width: 1024px) {
-    .result {
-        padding: 0;
-        gap: 1.5rem;
-        align-items: flex-start;
-        justify-content: flex-start;
-        flex-direction: column;
-        border-radius: 0;
-        background: none;
-    }
-    
-    .result .encoder__rule-container {
-        display: initial;
-    }
-    
-    .result .button-group {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-    }
-    
-    .result__empty {
-        display: flex;
-        padding: 1.4rem;
-        flex-direction: initial;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        flex: 1;
-        border-radius: 2.25rem;
-        background: var(--md-sys-color-surface-container, #EBEEF7);
-    }
-    
-    .result__empty img {
-        display: none;
-    }
-    
     .result__output {
-        display: flex;
         padding: 1.4rem;
-        flex-direction: initial;
+        flex-direction: row;
         align-items: center;
         justify-content: center;
-        width: 100%;
-        border-radius: 2.25rem;
-        background: var(--md-sys-color-surface-container, #EBEEF7);
     }
 }
 
-/* Smartphones properties */
+/* Mobile específico */
 @media screen and (max-width: 600px) {
-    .result {
-        padding: 0;
-        gap: 1.5rem;
-        align-items: flex-start;
-        justify-content: flex-start;
-        flex-direction: column;
-        border-radius: 0;
-        background: none;
-    }
-    
-    .result .encoder__rule-container {
-        display: initial;
-    }
-    
-    .result .button-group {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-    }
-    
     .result__empty {
-        display: flex;
         padding: 2.5rem;
-        flex-direction: initial;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        flex: 1;
-        border-radius: 2.25rem;
-        background: var(--md-sys-color-surface-container, #EBEEF7);
-    }
-    
-    .result__empty img {
-        display: none;
     }
     
     .result__output {
-        display: flex;
         padding: 1.4rem 1rem;
-        flex-direction: initial;
+        flex-direction: row;
         align-items: center;
         justify-content: center;
-        width: 100%;
         flex: 1;
-        border-radius: 2.25rem;
-        background: var(--md-sys-color-surface-container, #EBEEF7);
     }
 }

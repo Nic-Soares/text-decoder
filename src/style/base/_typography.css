@@ -1,4 +1,4 @@
-/* Display Styles */
+/* Base Typography */
 .typography-base,
 h1, h2, h3, h4, h5, h6,
 p, span, a, li, label,
@@ -8,8 +8,8 @@ input, textarea, button {
     color: var(--md-sys-color-on-surface);
 }
 
+/* Display Styles */
 .display-large {
-    font-family: var(--font-primary);
     font-size: var(--display-large-size, 57px);
     font-weight: var(--font-weight-regular);
     line-height: var(--display-large-line-height, 64px);
@@ -17,7 +17,6 @@ input, textarea, button {
 }
 
 .display-medium {
-    font-family: var(--font-primary);
     font-size: var(--display-medium-size, 45px);
     font-weight: var(--font-weight-regular);
     line-height: var(--display-medium-line-height, 52px);
@@ -25,7 +24,6 @@ input, textarea, button {
 }
 
 .display-small {
-    font-family: var(--font-primary);
     font-size: var(--display-small-size, 36px);
     font-weight: var(--font-weight-regular);
     line-height: var(--display-small-line-height, 44px);
@@ -34,7 +32,6 @@ input, textarea, button {
 
 /* Headline Styles */
 .headline-large {
-    font-family: var(--font-primary);
     font-size: var(--headline-large-size, 32px);
     font-weight: var(--font-weight-regular);
     line-height: var(--headline-large-line-height, 40px);
@@ -42,7 +39,6 @@ input, textarea, button {
 }
 
 .headline-medium {
-    font-family: var(--font-primary);
     font-size: var(--headline-medium-size, 28px);
     font-weight: var(--font-weight-regular);
     line-height: var(--headline-medium-line-height, 36px);
@@ -50,7 +46,6 @@ input, textarea, button {
 }
 
 .headline-small {
-    font-family: var(--font-primary);
     font-size: var(--headline-small-size, 24px);
     font-weight: var(--font-weight-regular);
     line-height: var(--headline-small-line-height, 32px);
@@ -59,7 +54,6 @@ input, textarea, button {
 
 /* Title Styles */
 .title-large {
-    font-family: var(--font-primary);
     font-size: var(--title-large-size, 22px);
     font-weight: var(--font-weight-regular);
     line-height: var(--title-large-line-height, 28px);
@@ -67,7 +61,6 @@ input, textarea, button {
 }
 
 .title-medium {
-    font-family: var(--font-primary);
     font-size: var(--title-medium-size, 16px);
     font-weight: var(--font-weight-medium);
     line-height: var(--title-medium-line-height, 24px);
@@ -75,7 +68,6 @@ input, textarea, button {
 }
 
 .title-small {
-    font-family: var(--font-primary);
     font-size: var(--title-small-size, 14px);
     font-weight: var(--font-weight-medium);
     line-height: var(--title-small-line-height, 20px);
@@ -84,7 +76,6 @@ input, textarea, button {
 
 /* Label Styles */
 .label-large {
-    font-family: var(--font-primary);
     font-size: var(--label-large-size, 14px);
     font-weight: var(--font-weight-medium);
     line-height: var(--label-large-line-height, 20px);
@@ -92,7 +83,6 @@ input, textarea, button {
 }
 
 .label-medium {
-    font-family: var(--font-primary);
     font-size: var(--label-medium-size, 12px);
     font-weight: var(--font-weight-medium);
     line-height: var(--label-medium-line-height, 16px);
@@ -100,7 +90,6 @@ input, textarea, button {
 }
 
 .label-small {
-    font-family: var(--font-primary);
     font-size: var(--label-small-size, 11px);
     font-weight: var(--font-weight-medium);
     line-height: var(--label-small-line-height, 16px);
@@ -109,15 +98,13 @@ input, textarea, button {
 
 /* Body Styles */
 .body-large {    
-    font-family: var(--font-primary);
     font-size: var(--body-large-size, 1rem);
-    font-weight: 400;
-    line-height: 1.5rem; /* 150% */
-    letter-spacing: 0.03125rem;
+    font-weight: var(--font-weight-regular);
+    line-height: var(--body-large-line-height, 1.5rem);
+    letter-spacing: var(--body-large-letter-spacing, 0.03125rem);
 }
 
 .body-medium {
-    font-family: var(--font-primary);
     font-size: var(--body-medium-size, 14px);
     font-weight: var(--font-weight-regular);
     line-height: var(--body-medium-line-height, 20px);
@@ -125,7 +112,6 @@ input, textarea, button {
 }
 
 .body-small {
-    font-family: var(--font-primary);
     font-size: var(--body-small-size, 12px);
     font-weight: var(--font-weight-regular);
     line-height: var(--body-small-line-height, 16px);

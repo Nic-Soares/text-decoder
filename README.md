@@ -74,29 +74,38 @@ This project, evolved from an Alura ONE challenge, has been reimagined as a prof
 ### Prerequisites
 
 * npm
-
   ```sh
   npm install npm@latest -g
+  ```
+* TypeScript
+  ```sh
+  npm install -g typescript
   ```
 
 ### Installation
 
 1. Clone the repository
-
    ```sh
    git clone https://github.com/Nic-Soares/text-decoder.git
    ```
 
 2. Install NPM packages
-
    ```sh
    npm install
    ```
-
-3. Start development server
-
+   
+   If dependencies don't install automatically, install TypeScript:
    ```sh
-   npm run dev
+   npm install --save-dev typescript
+   ```
+
+3. Compile TypeScript files
+   ```sh
+   # One-time compilation
+   npx tsc
+   
+   # Or watch mode for development
+   npx tsc --watch
    ```
 
 ## Design
@@ -166,5 +175,5 @@ Nicolas - [@nicolas.png](https://pixelfed.social/i/web/profile/78653552950657034
 [MaterialDesign-url]: https://m3.material.io/
 [CSS]: https://img.shields.io/badge/CSS-CSS?style=for-the-badge&logo=css&logoColor=%23663399&logoSize=auto&labelColor=white&color=%23663399
 [CSS-url]: https://img.shields.io/badge/CSS-CSS?style=for-the-badge&logo=css&logoColor=%23663399&logoSize=auto&labelColor=white&color=%23663399
-[HTML5]: https://img.shields.io/badge/Material%20Desing-%23757575?style=for-the-badge&logo=html5&logoColor=%23E34F26&logoSize=auto&labelColor=white&color=%23E34F26
-[HTML5-url]: https://img.shields.io/badge/Material%20Desing-%23757575?style=for-the-badge&logo=html5&logoColor=%23E34F26&logoSize=auto&labelColor=white&color=%23E34F26
+[HTML5]: https://img.shields.io/badge/html-html?style=for-the-badge&logo=html5&logoColor=%23E34F26&logoSize=auto&labelColor=white&color=%23E34F26
+[HTML5-url]: https://img.shields.io/badge/html-html?style=for-the-badge&logo=html5&logoColor=%23E34F26&logoSize=auto&labelColor=white&color=%23E34F26

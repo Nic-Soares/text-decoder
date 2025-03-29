@@ -2,8 +2,7 @@
   "compilerOptions": {
     "target": "esnext",                    /* Compila para a versão mais recente do ECMAScript */
     "module": "ESNext",                    /* Usa a última versão de módulos ECMAScript */
-    "lib": ["DOM", "ESNext"],              /* Inclui as bibliotecas do DOM e as mais recentes do ES */
-    "jsx": "react-jsx",                    /* Para React, usa o novo transform JSX */
+    "lib": ["DOM", "ESNext"],              /* Inclui as bibliotecas do DOM e as mais recentes do ES 
     "strict": true,                        /* Habilita as verificações estritas de tipo */
     "esModuleInterop": true,               /* Facilita a interoperabilidade entre CommonJS e ES Modules */
     "skipLibCheck": true,                  /* Ignora a checagem de tipos das bibliotecas */

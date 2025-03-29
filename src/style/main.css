@@ -1,18 +1,19 @@
-/* Material Design */
-@import 'material/symbols/_symbols.css';  /* Corrigido */
-@import 'material/themes/_light.css';
-@import 'material/themes/_dark.css';
-@import 'material/icon_button/presets.css';
-
-/* Base */
+/* Imports organizados por função/escopo em vez de tipo de arquivo */
+/* 1. Configurações e variáveis */
 @import 'base/_variables.css';
 @import 'base/_reset.css';
 @import 'base/_typography.css';
 
-/* Layout */
+/* 2. Material Design */
+@import 'material/symbols/_symbols.css';
+@import 'material/themes/_light.css';
+@import 'material/themes/_dark.css';
+@import 'material/icon_button/presets.css';
+
+/* 3. Layout */
 @import 'layout/_page.css';
 
-/* Components */
+/* 4. Components */
 @import 'components/_header.css';
 @import 'components/_encoder.css';
 @import 'components/_result.css';

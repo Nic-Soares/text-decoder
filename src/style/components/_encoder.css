@@ -1,4 +1,4 @@
-/* Propriedades Globais (que não se alteram em nenhum media query) */
+/* Propriedades Globais */
 .encoder {
     display: flex;
     flex-direction: column;
@@ -58,19 +58,15 @@
 /* Tablets properties */
 @media screen and (min-width: 601px) and (max-width: 1024px) {
     .encoder {
-        display: flex;
         gap: 1.25rem;
-        padding: 0rem 1.4rem;
+        padding: 0 1.4rem;
     }
     
     .encoder__input-field {
         min-height: 200px;
     }
     
-    .encoder .button-group {
-        display: none;
-    }
-    
+    .encoder .button-group, 
     .encoder .encoder__rule-container {
         display: none;
     }
@@ -79,7 +75,6 @@
 /* Smartphones properties */
 @media screen and (max-width: 600px) {
     .encoder {
-        padding-top: 0;
         gap: 0.75rem;
         padding: 1rem;
     }
@@ -87,15 +82,7 @@
     .encoder__input-field {
         min-height: 150px;
     }
-    
-    .encoder .button-group {
-        display: none;
-    }
-    
-    .encoder .encoder__rule-container {
-        display: none;
-    }
-    
+
     .display-small {
         font-size: 30px;
     }
