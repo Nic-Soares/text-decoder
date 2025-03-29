@@ -86,4 +86,9 @@
     .display-small {
         font-size: 30px;
     }
+    
+    .encoder .button-group, 
+    .encoder .encoder__rule-container {
+        display: none;
+    }
 }
