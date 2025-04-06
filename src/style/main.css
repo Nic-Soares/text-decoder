@@ -1,20 +1,19 @@
 /* Imports organizados por função/escopo em vez de tipo de arquivo */
 /* 1. Configurações e variáveis */
-@import 'base/_variables.css';
-@import 'base/_reset.css';
-@import 'base/_typography.css';
+@import './base/_variables.css';
+@import './base/_reset.css';
+@import './base/_typography.css';
 
 /* 2. Material Design */
-@import 'material/symbols/_symbols.css';
-@import 'material/themes/_light.css';
-@import 'material/themes/_dark.css';
-@import 'material/icon_button/presets.css';
+@import './material/symbols/_symbols.css';
+@import './material/themes/_light.css';
+@import './material/themes/_dark.css';
+@import './material/icon_button/presets.css';
 
 /* 3. Layout */
-@import 'layout/_page.css';
+@import './layout/_page.css';
 
 /* 4. Components */
-@import 'components/_header.css';
-@import 'components/_encoder.css';
-@import 'components/_result.css';
-@import 'components/_footer.css';
+@import './components/_header.css';
+@import './components/_encoder.css';
+@import './components/_result.css';

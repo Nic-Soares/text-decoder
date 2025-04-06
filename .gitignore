@@ -4,10 +4,10 @@ yarn.lock
 package-lock.json
 
 # Build outputs
-dist/
-build/
-*.js
-*.js.map
+#dist/
+#build/
+#*.js
+#*.js.map
 
 # TypeScript
 *.tsbuildinfo
